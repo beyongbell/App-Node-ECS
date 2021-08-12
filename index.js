@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/login',function(req,res) {
-    let user_name = req.body.user;
+    let user_name = req.body.username;
     let password = req.body.password;
     res.status(200).json({ username: user_name, password: password });
 });
